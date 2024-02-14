@@ -79,7 +79,7 @@ export function App() {
 
   return (
     <div className='mx-auto max-w-6xl my-12 space-y-6 px-5'>
-      <img src={logo} alt='NLW Expoert'/>
+      <NewNoteCard onNoteCreated={onNoteCreated} />
       <form className='w-full'>   
         <input 
           type="text" 
@@ -91,9 +91,9 @@ export function App() {
 
       <div className='h-px bg-slate-700' />
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[250px] gap-6'>
-        <NewNoteCard onNoteCreated={onNoteCreated} />
-        
+      <div 
+        className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-[250px] gap-6'
+      >
         {notesFilter.map(note => (
           <NoteCard note={note} onNoteDeleted={onNoteDeleted} onNoteEdit={onNoteEdit} />
         ))}
