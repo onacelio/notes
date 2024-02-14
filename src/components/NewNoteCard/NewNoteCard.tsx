@@ -82,9 +82,6 @@ export function NewNoteCard({ onNoteCreated }: NewNoteCardProps) {
    <Dialog.Root>
      <Dialog.Trigger className='rounded-md bg-slate-700 p-5 space-y-3 flex flex-col text-left gap-3 hover:ring-2 hover:ring-slate-600 outline-none focus-visible:ring-2 focus-visible:ring-lime-400'>
         <span className='text-sm font-medium text-slate-200'>Adicionar nota</span>
-        <p className='text-sm leading-6 text-slate-400'>
-          Texto texto texto texto texto texto texto texto texto
-        </p>
       </Dialog.Trigger>
 
       <Dialog.Portal>
